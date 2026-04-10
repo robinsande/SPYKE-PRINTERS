@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPYKE PRINTERS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        .flyers-hero {
+            background: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.7)), url('images/marketing.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">SPYKE PRINTERS <span style="color:var(--accent-gold)"></span></a>
+            <button class="mobile-toggle" id="mobile-menu-btn">☰</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="business-cards.html">Cards</a></li>
+                    <li><a href="flyers.html" class="active">Marketing</a></li>
+                    <li><a href="banners.html">Banners</a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                    <li><a href="apparel.html">Apparel</a></li>
+                    <li><a href="mugs.html">Merchandise</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <a href="https://wa.me/+254 711 583 416" class="floating-wa" target="_blank" title="Chat on WhatsApp">💬</a>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="merch-hero flyers-hero">
+            <div class="hero-content">
+                <h1>High-Impact<br>Marketing.</h1>
+                <p style="font-size:1.2rem; max-width:600px; margin:0 auto;">
+                    Flyers and brochures that convert. spread your message with vibrant, high-quality prints.
+                </p>
+            </div>
+        </section>
+
+        <div class="product-page" style="display:block; max-width:1200px;">
+
+            <!-- Features -->
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Vibrant Color</h3>
+                    <p>Rich, accurate colors that make your brand pop.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Glossy Finish</h3>
+                    <p>Premium 130gsm-170gsm glossy paper stocks.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Bulk Discounts</h3>
+                    <p>Get better rates on larger marketing campaigns.</p>
+                </div>
+            </div>
+
+            <!-- Showcase Grid -->
+            <h2 class="section-title" style="text-align:center; margin-bottom:2rem;">Popular Sizes</h2>
+
+            <div class="showcase-grid">
+                <!-- A4 -->
+                <div class="showcase-card" onclick="selectOption('a4')">
+                    <img src="C:\Users\abrah\Desktop\Spyke Printers\A0 1.jpg" alt="A4 Flyer">
+                    <h4>A0 Drawings</h4>
+                    <p></p>
+                </div>
+
+                <!-- A5 -->
+                <div class="showcase-card" onclick="selectOption('a5')">
+                    <img src="c:\Users\ALEXANDER\Desktop\Retro Graphics\What-is-Large-Format-Digital-Printing.jpg" alt="A5 Flyer">
+                    <h4>A1 Standard Drawing</h4>
+                    <p></p>
+                </div>
+
+                <!-- A6 -->
+                <div class="showcase-card" onclick="selectOption('a6')">
+                    <img src="c:\Users\ALEXANDER\Desktop\Retro Graphics\images (1).jpg" alt="A6 Flyer">
+                    <h4>A2 standard Drawing</h4>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Order Section -->
+            <div class="product-page" id="order-section"
+                style="margin-top:4rem; border-top:1px solid var(--glass-border); padding-top:4rem;">
+                <div class="product-image">
+                    <img src="images/marketing.jpg" alt="Selected Product">
+                </div>
+
+                <div class="product-details">
+                    <h2 style="color:var(--accent-gold); margin-bottom:0.5rem;">Start Your Campaign</h2>
+                    <p style="margin-bottom:2rem; color:var(--text-muted);">
+                        Select your Drawing  Paper size  below.
+                    </p>
+
+                    <form id="flyer-form">
+                        <div class="form-group">
+                            <label for="f-size">Size Format</label>
+                            <select id="f-size">
+                                <option value="a0">A0 </option>
+                                <option value="a1">A1 </option>
+                                <option value="a2">A2 </option>
+                                <option value="a3">A3 </option>
+                                <option value="a4">A4 </option>
+                                <option value="a5">A5 s</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            
+                        </div>
+
+                        <div class="price-display">
+                            <small
+                                style="text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted);">
+                                </small>
+
+                            <div>
+  <!-- Inputs for price and quantity -->
+  <input type="number" id="price" placeholder="Price" oninput="calc()">
+  <input type="number" id="qty" placeholder="Quantity" oninput="calc()">
+
+  <!-- Div to display the result -->
+  <div id="result">0</div>
+</div>
+                        </div>
+
+                        
+                            
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>SPYKE PRINTERS & SUPPLIES</h4>
+                <p>We offer professional photography, instant headshot services, and digital printing on a wide range of media—including canvas, premium photo paper, blueprints, and CAD paper, available in A0,A1,A2,A3–A5 and custom sizes. We customize on demand branding services on t-shirts ,hoodies and corporate gifts".</p>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="business-cards.html">Business Cards</a></li>
+                    <li><a href="flyers.html">Marketing</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>+254 711 583 416</li>
+                    <li>Westlands Commercial Centre</li>
+                    <li>spyprinters03@gmail.com</li>
+                </ul>
+            </div>
+                  
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function selectOption(val) {
+            document.getElementById('order-section').scrollIntoView({ behavior: 'smooth' });
+            const select = document.getElementById('f-size');
+            select.value = val;
+            select.dispatchEvent(new Event('change'));
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPYKE PRINTERS</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <style>
+        .apparel-hero {
+            background: linear-gradient(rgba(2, 6, 23, 0.7), rgba(2, 6, 23, 0.7)), url('images/apparel.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">SPYKE PRINTERS <span style="color:var(--accent-gold)"></span></a>
+            <button class="mobile-toggle" id="mobile-menu-btn">☰</button>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="business-cards.html">Cards</a></li>
+                    <li><a href="flyers.html">Marketing</a></li>
+                    <li><a href="banners.html">Banners</a></li>
+                    <li><a href="photography.html">Photography</a></li>
+                    <li><a href="apparel.html" class="active">Apparel</a></li>
+                    <li><a href="mugs.html">Merchandise</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <a href="https://wa.me/+254 711 583 416" class="floating-wa" target="_blank" title="Chat on WhatsApp">💬</a>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="merch-hero apparel-hero">
+            <div class="hero-content">
+                <h1>Wear Your<br>Brand.</h1>
+                <p style="font-size:1.2rem; max-width:600px; margin:0 auto;">
+                    Professional branding for teams. High-quality embroidery, screen printing, and heat press.
+                </p>
+            </div>
+        </section>
+
+        <div class="product-page" style="display:block; max-width:1200px;">
+
+            <!-- Features -->
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Premium Fabric</h3>
+                    <p>Comfortable materials that last wash after wash.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Expert Embroidery</h3>
+                    <p>Precise stitching for a high-end corporate look.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Vibrant Prints</h3>
+                    <p>Screen printing that remains bright and sharp.</p>
+                </div>
+            </div>
+
+            <!-- Showcase Grid -->
+            <h2 class="section-title" style="text-align:center; margin-bottom:2rem;">Apparel Collection</h2>
+
+            <div class="showcase-grid">
+                <!-- T-Shirt -->
+                <div class="showcase-card" onclick="selectOption('tshirt')">
+                    <img src="c:\Users\ALEXANDER\Desktop\Retro Graphics\images (9).jpg" alt="Branded T-Shirt">
+                    <h4>Branded T-Shirt</h4>
+                    <p></p>
+                </div>
+
+                <!-- Hoodie -->
+                <div class="showcase-card" onclick="selectOption('hoodie')">
+                    <img src="c:\Users\ALEXANDER\Desktop\Retro Graphics\images (8).jpg" alt="Premium Hoodie">
+                    <h4>Premium Hoodie</h4>
+                    <p></p>
+                </div>
+
+                <!-- Polo -->
+                <div class="showcase-card" onclick="selectOption('polo')">
+                    <img src="c:\Users\ALEXANDER\Desktop\Retro Graphics\Polo 7.png" alt="Corporate Polo">
+                    <h4>Corporate Polo</h4>
+                    <p></p>
+                </div>
+            </div>
+
+            <!-- Order Section -->
+            <div class="product-page" id="order-section"
+                style="margin-top:4rem; border-top:1px solid var(--glass-border); padding-top:4rem;">
+                <div class="product-image">
+                    <img src="images/apparel.jpg" alt="Selected Product">
+                </div>
+
+                <div class="product-details">
+                    <h2 style="color:var(--accent-gold); margin-bottom:0.5rem;">Outfit Your Team</h2>
+                    <p style="margin-bottom:2rem; color:var(--text-muted);">
+                        Select your garment type and quantity.
+                    </p>
+
+                    <form id="apparel-form">
+                        <div class="form-group">
+                            <label for="a-type">Garment Type</label>
+                            <select id="a-type">
+                                <option value="tshirt">Branded T-Shirt </option>
+                                <option value="hoodie">Premium Hoodie </option>
+                                <option value="polo">Corporate Polo </option>
+                            </select>
+                        </div>
+
+                        
+
+                        <div class="price-display">
+                            <small
+                                style="text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted);"></small>
+                            
+                        
+                            <div>
+  <!-- Inputs for price and quantity -->
+  <input type="number" id="price" placeholder="Price" oninput="calc()">
+  <input type="number" id="qty" placeholder="Quantity" oninput="calc()">
+
+  <!-- Div to display the result -->
+  <div id="result">0</div>
+                            
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>SPYKE PRINTERS & SUPPLIES</h4>
+                <p>We offer professional photography, instant headshot services, and digital printing on a wide range of media—including canvas, premium photo paper, blueprints, and CAD paper, available in A0,A1,A2,A3–A5 and custom sizes. We customize on demand branding services on t-shirts ,hoodies and corporate gifts"</p>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="apparel.html">Apparel</a></li>
+                    <li><a href="mugs.html">Merchandise</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact Info</h4>
+                <ul>
+                    <li>+254 711 583 416</li>
+                    <li>Westlands Commercial Centre</li>
+                    <li>spyprinters03@gmail.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function selectOption(val) {
+            document.getElementById('order-section').scrollIntoView({ behavior: 'smooth' });
+            const select = document.getElementById('a-type');
+            select.value = val;
+            select.dispatchEvent(new Event('change'));
+        }
+    </script>
+</body>
+
+</html>
